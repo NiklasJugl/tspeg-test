@@ -1,0 +1,23 @@
+<form class="antlr-autocomplete-form">
+  <mat-form-field appearance="fill">
+    <mat-label>What does the...</mat-label>
+    <input
+      type="text"
+      placeholder="Pick one"
+      aria-label="Animals"
+      matInput
+      [matAutocomplete]="antlrAuto"
+      #antlrAutoInput
+      (input)="input($event)"
+      (keyup)="updateCuror()"
+    />
+    <mat-autocomplete
+      #antlrAuto="matAutocomplete"
+      (optionSelected)="autocompleted($event)"
+    >
+      <mat-option *ngFor="let option of options" [value]="option">
+        {{ option }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

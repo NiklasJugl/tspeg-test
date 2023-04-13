@@ -1,0 +1,27 @@
+parse:= WHAT SPACE* DOES SPACE* THE SPACE* animal={ANIMAL} SPACE* SAY SPACE* QUESTIONMARK SPACE* sound={SOUND} EOF
+
+
+ANIMAL:= COW | FOX | CAT | DOG | WORD
+SOUND:= MOO | YIF | MEOW | WOF | WORD
+
+
+WHAT:='What'
+DOES:='does'
+THE:= 'the'
+SAY:= 'say'
+QUESTIONMARK:='\?'
+
+COW:='cow'
+FOX:='fox'
+CAT:='cat'
+DOG:='dog'
+MOO:='moo'
+YIF:='yif'
+MEOW:='moew'
+WOF:='wof'
+
+WORD := word='[a-z]+'
+
+SPACE := ' '
+
+EOF := $
