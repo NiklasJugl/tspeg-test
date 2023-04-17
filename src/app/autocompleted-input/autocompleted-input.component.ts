@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AutocompletedInputComponent {
 
-  parseString(inputString: string) {
+  parseString() {
     return ["Owl","Cat", "Dog"];
   }
 }

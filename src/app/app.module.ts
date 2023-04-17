@@ -8,11 +8,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { AnimalsComponent } from './animals/animals.component';
-import { AntlrAutocompleteComponent } from './antlr-autocomplete/antlr-autocomplete.component';
+import { AntlrAutocompleteComponent } from './dls-autocomplete/dsl-autocomplete.component';
 import { AutocompleteComponent } from './autocomplete/autocomplete.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AutocompletedInputComponent } from './autocompleted-input/autocompleted-input.component';
 import { SelectAnimalComponent } from './select-animal/select-animal.component';
+import { DslInputComponent } from './dsl-input/dsl-input.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SelectAnimalComponent } from './select-animal/select-animal.component';
     AntlrAutocompleteComponent,
     AutocompleteComponent,
     AutocompletedInputComponent,
-    SelectAnimalComponent
+    SelectAnimalComponent,
+    DslInputComponent
   ],
   imports: [
     BrowserModule,

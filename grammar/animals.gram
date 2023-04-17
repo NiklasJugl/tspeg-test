@@ -1,15 +1,14 @@
-parse:= WHAT SPACE* DOES SPACE* THE SPACE* animal={ANIMAL} SPACE* SAY SPACE* QUESTIONMARK SPACE* sound={SOUND} EOF
+parse:= WHAT SPACE* DOES SPACE* THE SPACE* animal={ANIMAL} SPACE* SAY SPACE* sound={SOUND} EOF
 
 
 ANIMAL:= COW | FOX | CAT | DOG | WORD
-SOUND:= MOO | YIF | MEOW | WOF | WORD
+SOUND:= MOO | YIF | MEOW | WOOF | WORD
 
 
 WHAT:='What'
 DOES:='does'
 THE:= 'the'
-SAY:= 'say'
-QUESTIONMARK:='\?'
+SAY:= 'say\?'
 
 COW:='cow'
 FOX:='fox'
@@ -17,8 +16,8 @@ CAT:='cat'
 DOG:='dog'
 MOO:='moo'
 YIF:='yif'
-MEOW:='moew'
-WOF:='wof'
+MEOW:='meow'
+WOOF:='woof'
 
 WORD := word='[a-z]+'
 

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AntlrAutocompleteComponent } from './antlr-autocomplete.component';
+import { AntlrAutocompleteComponent } from './dsl-autocomplete.component';
 
 describe('AntlrAutocompleteComponent', () => {
   let component: AntlrAutocompleteComponent;

@@ -1,0 +1,13 @@
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Autocomplete animals</mat-label>
+    <input
+      type="text"
+      placeholder="...start typing"
+      aria-label="Text"
+      matInput
+      #autoInput
+      (input)="parse($event)"
+    />
+  </mat-form-field>
+
+<p>{{parsingOutput}}</p>
